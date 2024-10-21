@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: testing-collection-coll-48f41d6a1c0e43e0b081d4e5d81ef70a-srv
+spec:
+  selector:
+    app: testing-collection-coll-48f41d6a1c0e43e0b081d4e5d81ef70a
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9015
+  type: LoadBalancer
